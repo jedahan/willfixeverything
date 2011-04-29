@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'AirstreamRegular';
+    src: url('fonts/Airstream-webfont.eot');
+    src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Airstream-webfont.woff') format('woff'),
+         url('fonts/Airstream-webfont.ttf') format('truetype'),
+         url('fonts/Airstream-webfont.svg#AirstreamRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-image: url('thumbs_up.gif');
+  background-repeat: repeat;
+}
+
+header {
+  font-family: AirstreamRegular; 
+  font-size: 4em;
+  text-align: center;
+  text-shadow: #000000 3px 3px;
+  color: #cccccc;
+}
+
+.thing {
+  font-family: AirstreamRegular;
+  font-size: 200%;
+  color: #C00000;
+}
