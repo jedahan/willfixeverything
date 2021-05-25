@@ -29,20 +29,22 @@
       color: #cccccc;
     }
 
-    .thing {
+    #thing {
       font-family: AirstreamRegular;
       font-size: 200%;
       color: #C00000;
     }
     </style>
     <script>
-      document.onReady(() => {
+      window.onload = () => {
         const thing = window.location.host
           .replace('willfixeverything.com', '')
           .replace('.', ' ')
-        document.title = `${thing} will fix EVERYTHING`
-        document.getElementByClass('.thing').text(thing)
-      })
+        const text = `${thing} will fix EVERYTHING`
+
+        document.title = text
+        document.getElementById('thing').innerText = text
+      }
     </script>
   </head>
 
@@ -50,7 +52,7 @@
     <section>
       <header>
       <h1>
-        <span class="thing" /> will fix EVERYTHING!
+        <span id="thing" /> will fix EVERYTHING!
       </h1>
     </section>
   </body>
